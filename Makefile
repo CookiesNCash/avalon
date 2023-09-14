@@ -1,6 +1,9 @@
 install:
 	npm ci
 
+run:
+	node ./src/index.js
+
 lint:
 	npx eslint .
 
