@@ -16,13 +16,13 @@ const objCountPerson = {
   10: ['мерлин', 'ассасин', 'моргана', 'красный', 'Мирный житель', 'Персеваль', 'Мирный житель', 'Мирный житель', 'Мордеред', 'Мирный житель'],
 };
 const pathTrip = {
-  5: [2, 3 , 2, 3, 3],
-  6: [2, 3 , 4, 3, 4],
-  7: [2, 3 , 3, 4, 4],
-  8: [3, 4 , 4, 5, 5],
-  9: [3, 4 , 4, 5, 5],
-  10:[3, 4 , 4, 5, 5],
-}
+  5: [2, 3, 2, 3, 3],
+  6: [2, 3, 4, 3, 4],
+  7: [2, 3, 3, 4, 4],
+  8: [3, 4, 4, 5, 5],
+  9: [3, 4, 4, 5, 5],
+  10: [3, 4, 4, 5, 5],
+};
 
 const countPlayer = readlineSync.question('Сколько игроков? ');
 
@@ -38,7 +38,7 @@ const qwe = (arr) => {
     readlineSync.question('Следующий нажми Enter');
     console.clear();
   });
-  adventure(pathTrip[countPlayer])
+  adventure(pathTrip[countPlayer]);
   readlineSync.question('Хотите увидеть все Роли?');
   console.log(obj);
 };
