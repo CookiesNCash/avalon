@@ -1,6 +1,5 @@
 import readlineSync from 'readline-sync';
-import adventure from './trip.js'
-
+import adventure from './trip.js';
 
 console.clear();
 
