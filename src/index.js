@@ -1,8 +1,6 @@
 import readlineSync from 'readline-sync';
 import adventure from './trip.js';
 
-console.clear();
-
 function shuffle(array) {
   array.sort(() => Math.random() - 0.5);
 }
@@ -23,8 +21,6 @@ const pathTrip = {
   9: [3, 4, 4, 5, 5],
   10: [3, 4, 4, 5, 5],
 };
-
-const countPlayer = readlineSync.question('Сколько игроков? ');
 
 const qwe = (arr) => {
   shuffle(arr);
